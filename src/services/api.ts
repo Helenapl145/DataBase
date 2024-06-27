@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: "https://ftcfke7dq3sryag5zumeerufkm0fiwvv.lambda-url.us-east-1.on.aws"
+    baseURL: ""
 });
 
 
 export async function fetchProfile() {
-    const access_token = localStorage.getItem("@dtlabs")
+    const access_token = localStorage.getItem("@db")
     
     const response = await api.get('/users/me', {
         headers: {

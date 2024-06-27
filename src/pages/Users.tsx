@@ -112,7 +112,7 @@ export function Users(){
 
     useEffect(() => {
         async function fetchSales() {
-          const access_token = localStorage.getItem("@dtlabs")
+          const access_token = localStorage.getItem("@db")
   
           const response = await api.get('/sales', {
             headers: {

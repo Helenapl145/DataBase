@@ -18,7 +18,7 @@ export function Navbar(){
 
     return(
         <aside className="bg-white lg:w-1/5 w-1/4 min-w-fit max-h-full lg:pl-10 lg:pt-10 pl-4 pt-4 font-poppins flex flex-col items-start ">
-            <img src={Logo} alt="Logo da dtLabs" className="self-center w-24"/>
+            <img src={Logo} alt="Logo da db" className="self-center w-24"/>
             <hr className="my-10 border border-line w-20 lg:w-11/12 self-center"/>
             <ul className="flex flex-col gap-12"> 
              

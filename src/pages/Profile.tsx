@@ -20,7 +20,7 @@ export function Profile() {
 
     useEffect(() => {
         async function fetchProfile() {
-            const access_token = localStorage.getItem("@dtlabs")
+            const access_token = localStorage.getItem("@db")
             const response = await api.get('/users/me', {
                 headers: {
                 'accept': 'application/json',

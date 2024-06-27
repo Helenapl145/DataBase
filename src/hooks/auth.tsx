@@ -45,7 +45,7 @@ function AuthProvider({children}: AuthProvidesProps) {
                 const {access_token} = response.data
               
                 setTimeout(() => {
-                  localStorage.setItem("@dtlabs", access_token)
+                  localStorage.setItem("@db", access_token)
                   api.defaults.headers.common["authorization"] = `Bearer ${access_token}`
                 
                   setData(access_token)
@@ -65,13 +65,13 @@ function AuthProvider({children}: AuthProvidesProps) {
     }
 
     function signOut(): Promise<void>{
-      localStorage.removeItem("@dtlabs")
+      localStorage.removeItem("@db")
       setData(null)
       return Promise.resolve();
   }
 
     useEffect(() => {
-      const access_token = localStorage.getItem("@dtlabs")
+      const access_token = localStorage.getItem("@db")
       const token = access_token?.toString()
 
       if(token) {

@@ -155,7 +155,7 @@ export function Graphic({ width = 600, height = 300, margin = { top: 20, right: 
     
     async function fetchSales() {
       
-      const access_token = localStorage.getItem("@dtlabs");
+      const access_token = localStorage.getItem("@db");
 
       const response = await api.get('/sales', {
         headers: {
